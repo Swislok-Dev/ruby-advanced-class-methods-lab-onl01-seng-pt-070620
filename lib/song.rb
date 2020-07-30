@@ -29,6 +29,13 @@ class Song
     song
   end
 
+  def self.find_by_name
+    @@all.each do |x|
+      if x.name == x
+        puts x.name
+      end
+    end
+
   def self.alphabetical
     @@all.sort_by {|x| x.name}
   end
