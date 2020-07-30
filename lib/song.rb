@@ -29,11 +29,9 @@ class Song
     song
   end
 
-  def self.find_by_name
-    @@all.each do |x|
-      x.name.include?(x)
-      @name
-    end
+  def self.find_by_name(name)
+    @@all.find{name}
+  end
 
   def self.alphabetical
     @@all.sort_by {|x| x.name}
